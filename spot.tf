@@ -1,4 +1,4 @@
-data "aws_ami" "this" {
+data "aws_ami" "yvidata" {
   most_recent = true
   owners      = ["amazon"]
   filter {
@@ -11,8 +11,8 @@ data "aws_ami" "this" {
   }
 }
 
-resource "aws_instance" "this" {
-  ami = data.aws_ami.this.id
+resource "aws_instance" "yviinstance" {
+  ami = data.aws_ami.yvidata.id
   /*instance_market_options {
     market_type = "spot"
     spot_options {
