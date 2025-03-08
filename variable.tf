@@ -1,7 +1,7 @@
-/*variable "bucket_name" {
+variable "bucket_name" {
   type        = string
   description = "The name of the S3 bucket"
-}*/
+}
 
 variable "aws_region" {
   description = "AWS region"
