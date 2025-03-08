@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "yvibuckets" {
  # acl    = "private"
 
   tags = {
-    Name        = "yviBucket ${count.index + 1}"
+    Name        = "var.bucket_name ${count.index + 1}"
     Environment = "Dev"
   }
 }
